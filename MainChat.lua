@@ -1,6 +1,6 @@
 //Serverside//
 
-fucntion globalChat(thePlayer, cmd, ...)
+function globalChat(thePlayer, cmd, ...)
 local message = table.concat ( { ... }, " ")
 local name = getPlayerName(thePlayer)
 	outputChatBox("#c0c0c0[MAIN]#FF0000"..name..": #ffffff"..message, getRootElement(),
@@ -10,4 +10,4 @@ addCommandHandler("global", globalChat)
 
 //Clientside//
 
-bindKey("b", "dowm", "chatbox", "global")
+bindKey("g", "dowm", "chatbox", "global")
